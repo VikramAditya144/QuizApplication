@@ -1,0 +1,21 @@
+<!-- end.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz End</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Score</h1>
+        <p id="finalScore"></p>
+        <a href="page2.html" class="btn">Restart</a>
+        <a href="index.html" class="btn">Home</a>
+    </div>
+    <script>
+        document.getElementById('finalScore').innerText = localStorage.getItem('mostRecentScore');
+    </script>
+</body>
+</html>
